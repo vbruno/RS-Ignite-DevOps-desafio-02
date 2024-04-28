@@ -22,6 +22,9 @@ services:
     container_name: rs-devops-desafio-02
     ports:
       - 3333:3333
+    environment:
+      - DATABASE_URL=file:./dev.db
+      # - DATABASE_URL=postgresql://user:password@host:port/database
     # depends_on:
     #   - mysql
     networks:
