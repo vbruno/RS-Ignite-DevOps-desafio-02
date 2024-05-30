@@ -13,4 +13,4 @@
 - [X] Criação do volume no container
 - [X] Criação de rede customizada
 - [X] Utilizar variáveis de ambiente
-- [ ] Criação do README.md 
+- [X] Criação do README.md 
