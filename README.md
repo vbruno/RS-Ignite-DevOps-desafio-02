@@ -24,13 +24,16 @@ Para executar o projeto, siga os passos abaixo:
   
   ```bash
   # Clone este repositório
-  $ git clone #####
+  git clone https://github.com/vbruno/RS-Ignite-DevOps-desafio-02.git
 
   # Acesse a pasta do projeto no terminal
-  $ cd desafio-devops-rocketseat
+  cd RS-Ignite-DevOps-desafio-02
 
   # Execute o comando para subir o container
-  $ docker-compose up -d
+  docker-compose up 
+
+  # Caso queira rodar em background
+  docker-compose up -d
 
   # O servidor inciará na porta:3333
   ```
