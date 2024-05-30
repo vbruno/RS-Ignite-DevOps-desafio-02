@@ -1,0 +1,44 @@
+@baseUrl = http://localhost:3333
+
+
+# User
+
+## Insert
+POST {{baseUrl}}/user/insert
+Content-Type: application/json
+
+{
+    "name": "Lance Altenwerth",
+    "email": "Edyth_Kub@yahoo.com"
+}
+
+###
+
+## Get All
+GET {{baseUrl}}/user/getAll
+
+###
+
+# Post
+
+## Insert
+POST {{baseUrl}}/post/post
+Content-Type: application/json
+
+{
+    "title": "Post 2",
+    "content": "Content 2",
+    "authorEmail": "john.doe@email.com"
+}
+
+###
+## Publish
+
+@idPublish = 1
+
+PUT {{baseUrl}}/post/publish/{{idPublish}}
+
+###
+## Feed Post
+GET {{baseUrl}}/post/feed
+

@@ -23,10 +23,11 @@ services:
     ports:
       - 3333:3333
     environment:
-      - DATABASE_URL=file:./dev.db
-      # - DATABASE_URL=postgresql://user:password@host:port/database
-    # depends_on:
-    #   - mysql
+      # - DATABASE_URL=file:./dev.db
+      # - DATABASE_URL=postgresql://admin:root@localhost:5432/devops-db
+      - DATABASE_URL=postgresql://admin:root@rs-devops-db:5432/devops-db
+    depends_on:
+      - postgresql
     networks:
       - rs-devops-network
 
